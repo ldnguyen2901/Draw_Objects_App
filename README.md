@@ -255,9 +255,9 @@ $$(\frac{x - x_{0}}{a})^2+(\frac{y - y_{0}}{b})^2=1$$
 trong đó $(x_{0}, y_{0})$ là toạ độ tâm của hình Ellipse, a, b là độ dài hai bán trục.
 
 Thay toạ độ của điểm P vào vế trái của phương trình trên ta được giá trị $e$, ta so kết quả vừa tính được với 1
-- Nếu e < 1 thì P nằm trong hình Ellipse.
-- Nếu e = 1 thì P nằm trên biên của hình Ellipse.
-- Nếu e > 1 thì P nằm ngoài hình Ellipse.
+- Nếu $e < 1$ thì P nằm trong hình Ellipse.
+- Nếu $e = 1$ thì P nằm trên biên của hình Ellipse.
+- Nếu $e > 1$ thì P nằm ngoài hình Ellipse.
 
 Áp dụng thuật toán này, ta xây dựng được hai hàm $isPointInside()$ và $isPointInLine()$
 
@@ -404,7 +404,7 @@ ta đưa ra các quy tắc:
 Lưu ý, với quy tắc thứ 4 dẫn đến việc các điểm nằm trên các cạnh bên phải của hình đa
 giác sẽ được xem là nằm ngoài đa giác và các điểm nằm trên các cạnh bên trái của hình
 đa giác sẽ được xem là nằm bên trong.<br>
-Áp dụng thuật toán này, ta xây dựng được hàm isPointInSide() cho class <span style="color:rgb(96, 158, 187)">_Polygon</span>
+Áp dụng thuật toán này, ta xây dựng được hàm $isPointInSide()$ cho class <span style="color:rgb(96, 158, 187)">_Polygon</span>
 
 ```C++
 bool _Polygon::isPointInside(Point p) const {
@@ -431,7 +431,7 @@ bool _Polygon::isPointInside(Point p) const {
 Để kiểm tra một điểm nằm trên biên của hình đa giác, ta đi kiểm tra một điểm có nằm
 trên một đoạn thẳng hay không. Xét một cạnh bất kỳ của đa giác, ta tìm được khoảng
 cách giữa điểm đang xét đến hai đầu của đoạn thẳng, sau đó ta so sánh với độ dài cạnh:
-- Nếu AP + BP = AB thì điểm P nằm trên đoạn thẳng AB,
+- Nếu $AP + BP = AB$ thì điểm P nằm trên đoạn thẳng AB,
 - Ngược lại thì điểm P nằm ngoài đoạn thẳng AB, trong đó A, B là các đỉnh của đa giác, P là điểm đang xét.
 
 Áp dụng thuật toán này, ta xây dựng được hàm $isPointInLine()$ cho class <span style="color:rgb(96, 158, 187)">_Polygon</span>
@@ -734,7 +734,7 @@ case WM_KEYDOWN:
 
 <a name="424thaotacphongtothunhodoituongbangbanphim"></a>
 ### 4.2.4 Thao tác phóng to, thu nhỏ đối tượng bằng bàn phím
-Ta sử dụng phím (+) và (-) trên bàn phím chữ để thực hiện phóng to và thu nhỏ đối
+Ta sử dụng phím $(+)$ và $(-)$ trên bàn phím chữ để thực hiện phóng to và thu nhỏ đối
 tượng có màu xanh dương. Kết hợp với phím $Ctrl$ để thực hiện thao tác tương tự trên
 đối tượng còn lại (màu hồng).
 
@@ -766,7 +766,7 @@ case WM_KEYDOWN:
 
 <a name="425thaotacxoaydoituongbangbanphim"></a>
 ### 4.2.5 Thao tác xoay đối tượng bằng bàn phím
-Ta sử dụng phím chữ (L) và (R) trên bàn phím chữ để thực hiện xoay trái và xoay phải
+Ta sử dụng phím chữ $(L)$ và $(R)$ trên bàn phím chữ để thực hiện xoay trái và xoay phải
 đối tượng có màu xanh dương một góc $90^\circ$.  Kết hợp với phím $Ctrl$ để thực hiện thao tác
 tương tự trên đối tượng còn lại (màu hồng).
 
@@ -798,11 +798,11 @@ case WM_KEYDOWN:
 
 <a name="5huongdancaidatvachaychuontrinh"></a>
 # 5 Hướng dẫn cài đặt và chạy chương trình
-1. Tải và chạy [Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false).
-2. Chọn `Desktop delelopment with C++` và ấn `Install` ở góc phải phía dưới.
+1. Tải và chạy **[Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)**.
+2. Chọn **`Desktop delelopment with C++`** và ấn **`Install`** ở góc phải phía dưới.
   <center><img src="Pic/Modifying VS.png" alt=""></center>
 
-  3. Chạy file `BTL.sln ` và nhấn tổ hợp phím `Ctrl + F5` để chạy chương trình.
+  3. Chạy file **`BTL.sln`** và nhấn tổ hợp phím **`Ctrl + F5`** để chạy chương trình.
 
 
 <a name="6ketqua"></a>
@@ -811,8 +811,8 @@ case WM_KEYDOWN:
 
 Các nút để tương tác với <span style="color:#acacff">hình (màu xanh tím)</span>:
 - Dùng chuột di chuyển hình bằng cách kéo thả
-- Sử dụng các phím mũi tên **⬆⬇⬅⮕** để di chuyển hình
-- Nút $ Tab $ thay đổi *hình*
+- Sử dụng các phím mũi tên **⭡⭣⭠⭢** để di chuyển hình
+- Nút $Tab$ thay đổi *hình*
 - Nút $+$ để **phóng to** và $-$ để **thu nhỏ** 
 - Nút $L$ xoay trái và $R$ xoay phải $(90^\circ)$
 
